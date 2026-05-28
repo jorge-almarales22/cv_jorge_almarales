@@ -12,7 +12,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
-    # ESTO ES LO NUEVO: Obliga a correr todo dentro de cv-react
     defaults:
       run:
         working-directory: cv-react
@@ -34,5 +33,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: cv-react/dist # Apunta a la carpeta dist dentro de cv-react
+          folder: cv-react/dist 
           branch: gh-pages
