@@ -24,7 +24,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-[2rem] md:text-[2.75rem] font-extrabold text-gray-900 dark:text-slate-100 leading-tight mb-4"
         >
-          Camilo Acuña Yáñez
+          Jorge Almarales
         </motion.h1>
 
         <motion.p

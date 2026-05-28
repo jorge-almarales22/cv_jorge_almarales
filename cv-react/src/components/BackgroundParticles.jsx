@@ -30,7 +30,7 @@ const BackgroundParticles = () => {
       color: { value: "#3b82f6" },
       links: { color: "#3b82f6", distance: 150, enable: true, opacity: 0.15, width: 1 },
       move: { enable: true, speed: 0.8, direction: "none", random: false, straight: false, outModes: { default: "bounce" } },
-      number: { density: { enable: true, area: 800 }, value: 50 },
+      number: { density: { enable: true, area: 800 }, value: 75 },
       opacity: { value: 0.25 },
       shape: { type: "circle" },
       size: { value: { min: 1.5, max: 4 } },

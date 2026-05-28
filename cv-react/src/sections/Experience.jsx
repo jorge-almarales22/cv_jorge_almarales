@@ -29,6 +29,27 @@ const experiences = [
     date: "Oct 2023 - May 2024",
     desc: "Generé reportes ejecutivos para el seguimiento de indicadores operacionales y financieros. Analicé y validé transacciones internacionales.",
     tags: ["Análisis financiero", "Reporting", "Excel", "VBA"]
+  },
+  {
+    role: "Analista de Datos y Finanzas Comerciales",
+    company: "BTG Pactual Chile",
+    date: "Oct 2023 - May 2024",
+    desc: "Generé reportes ejecutivos para el seguimiento de indicadores operacionales y financieros. Analicé y validé transacciones internacionales.",
+    tags: ["Análisis financiero", "Reporting", "Excel", "VBA"]
+  },
+  {
+    role: "Analista de Datos y Finanzas Comerciales",
+    company: "BTG Pactual Chile",
+    date: "Oct 2023 - May 2024",
+    desc: "Generé reportes ejecutivos para el seguimiento de indicadores operacionales y financieros. Analicé y validé transacciones internacionales.",
+    tags: ["Análisis financiero", "Reporting", "Excel", "VBA"]
+  },
+  {
+    role: "Analista de Datos y Finanzas Comerciales",
+    company: "BTG Pactual Chile",
+    date: "Oct 2023 - May 2024",
+    desc: "Generé reportes ejecutivos para el seguimiento de indicadores operacionales y financieros. Analicé y validé transacciones internacionales.",
+    tags: ["Análisis financiero", "Reporting", "Excel", "VBA"]
   }
 ];
 
