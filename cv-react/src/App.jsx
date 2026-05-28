@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
+import Hero from './sections/Hero';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
@@ -12,11 +13,9 @@ function App() {
       <Navbar />
       <ThemeToggle />
       <main className="mx-auto relative z-0">
-        <div id="hero" className="h-16" />
+        <Hero />
         <Experience />
-        <div id="projects">
-          <Projects />
-        </div>
+        <Projects />
         <div id="skills">
           <Skills />
         </div>
