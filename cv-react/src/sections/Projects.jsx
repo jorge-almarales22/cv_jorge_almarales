@@ -34,7 +34,7 @@ const Projects = () => {
           Proyectos Destacados
         </h2>
         <p className="mt-4 text-[0.9375rem] md:text-[1.0625rem] text-gray-500 dark:text-slate-400 max-w-2xl leading-[1.375rem]">
-          Una selección de proyectos donde apliqué análisis de datos, visualización y automatización para resolver problemas reales de negocio.
+          Una selección de proyectos donde apliqué análisis de datos, visualización y automatización para resolver problemas reales de negocio. 
         </p>
       </div>
 
