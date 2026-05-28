@@ -70,8 +70,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="text-[1.125rem] md:text-[1.25rem] text-blue-600 dark:text-blue-400 font-semibold leading-snug max-w-lg mx-auto mb-10"
-          style={{ textShadow: '0 0 20px rgba(59,130,246,0.15)' }}
+          className="text-[1.125rem] md:text-[1.25rem] font-semibold leading-snug max-w-lg mx-auto mb-10"
+          style={{ color: '#d7c9c9', textShadow: '0 0 20px rgba(215,201,201,0.2)' }}
         >
           Elevo la eficiencia operativa de tu negocio con Software Inteligente y Analitica de Datos.
         </motion.h2>
