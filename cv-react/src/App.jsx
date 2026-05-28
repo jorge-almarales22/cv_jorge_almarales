@@ -9,7 +9,7 @@ import Contact from './sections/Contact';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen text-maintext">
+    <div className="bg-background min-h-screen text-maintext transition-colors">
       <Navbar />
       <ThemeToggle />
       <main className="mx-auto relative z-0">

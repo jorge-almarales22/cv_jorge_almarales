@@ -46,7 +46,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 px-4 sm:px-8 lg:px-20 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 dark:bg-slate-900/90 dark:border-slate-800'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
@@ -61,8 +61,8 @@ const Navbar = () => {
                 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:rounded-full after:transition-all after:duration-300
                 ${
                   active === s.id
-                    ? 'text-blue-600 after:w-8 after:bg-blue-500'
-                    : 'text-gray-500 hover:text-gray-800 after:w-0 hover:after:w-8 after:bg-gray-300'
+                    ? 'text-blue-600 after:w-8 after:bg-blue-500 dark:text-blue-400 dark:after:bg-blue-400'
+                    : 'text-gray-500 hover:text-gray-800 after:w-0 hover:after:w-8 after:bg-gray-300 dark:text-slate-400 dark:hover:text-slate-200 dark:after:bg-slate-600'
                 }`}
             >
               {s.label}
@@ -72,7 +72,7 @@ const Navbar = () => {
 
         {/* Mobile hamburger — right side */}
         <button
-          className="md:hidden absolute right-0 p-2 rounded-lg text-gray-500 hover:text-gray-800 hover:bg-gray-100 transition-colors"
+          className="md:hidden absolute right-0 p-2 rounded-lg text-gray-500 hover:text-gray-800 hover:bg-gray-100 dark:text-slate-400 dark:hover:text-slate-200 dark:hover:bg-slate-800 transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,15 +87,15 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-md pb-3">
+        <div className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-md pb-3 dark:border-slate-800 dark:bg-slate-900/95">
           {sections.map(s => (
             <button
               key={s.id}
               onClick={() => scrollTo(s.id)}
               className={`block w-full text-left px-4 py-2.5 text-sm font-medium transition-colors ${
                 active === s.id
-                  ? 'text-blue-600 bg-blue-50/70 border-l-[3px] border-blue-500 pl-[13px]'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 border-l-[3px] border-transparent pl-[13px]'
+                  ? 'text-blue-600 bg-blue-50/70 border-l-[3px] border-blue-500 pl-[13px] dark:text-blue-400 dark:bg-blue-900/20 dark:border-blue-400'
+                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50 border-l-[3px] border-transparent pl-[13px] dark:text-slate-400 dark:hover:text-slate-200 dark:hover:bg-slate-800/50'
               }`}
             >
               {s.label}
