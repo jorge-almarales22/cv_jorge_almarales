@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Ejecuta el despliegue automático al empujar cambios a main
+      - main
 
 permissions:
   contents: write
@@ -11,6 +11,12 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    # ESTO ES LO NUEVO: Obliga a correr todo dentro de cv-react
+    defaults:
+      run:
+        working-directory: cv-react
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -19,15 +25,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install and Build 🔧
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # Vite genera la compilación en la carpeta 'dist'
-          branch: gh-pages # Rama destino para los archivos estáticos
+          folder: cv-react/dist # Apunta a la carpeta dist dentro de cv-react
+          branch: gh-pages
