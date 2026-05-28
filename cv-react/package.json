@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.0",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
     "react": "^19.2.6",

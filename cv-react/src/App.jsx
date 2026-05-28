@@ -1,4 +1,5 @@
 import React from 'react';
+import BackgroundParticles from './components/BackgroundParticles';
 import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
 import Hero from './sections/Hero';
@@ -9,7 +10,8 @@ import Contact from './sections/Contact';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen text-maintext transition-colors">
+    <div className="bg-background min-h-screen text-maintext transition-colors relative overflow-hidden">
+      <BackgroundParticles />
       <Navbar />
       <ThemeToggle />
       <main className="mx-auto relative z-0">
